@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Text;
 
 // prostokątna macierz bitów o wymiarach m x n
@@ -27,25 +26,24 @@ public partial class BitMatrix
         {
             data = new BitArray(numberOfRows * numberOfColumns, false);
         }
-        else 
+
+        else
         {
+            int z = 0;
             data = new BitArray(numberOfRows * numberOfColumns, false);
-            for (int i = 0; i < numberOfRows; i++) 
+            for (int i = 0; i < numberOfRows; i++)
             {
+
                 for (int j = 0; j < numberOfColumns; j++)
                 {
                     if (j < numberOfColumns)
                     {
-                        if (bits[i+j] != 0)
-                        {
-                            data[i + j] = true;
-                        }
-                        else
-                        {
-                            data[i + j] = false;
-                        }
+
+                        data[i + j] = BitToBool(bits[z]);
+                        z++;
                     }
                 }
+
             }
         }
         NumberOfRows = numberOfRows;

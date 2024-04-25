@@ -10,3 +10,15 @@ C:\Users\SkutecznieUse\Desktop\studia\BitMatrix\BitMatrix\BitMatrixLib\obj\Debug
 C:\Users\SkutecznieUse\Desktop\studia\BitMatrix\BitMatrix\BitMatrixLib\obj\Debug\net8.0\refint\BitMatrixLib.dll
 C:\Users\SkutecznieUse\Desktop\studia\BitMatrix\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.pdb
 C:\Users\SkutecznieUse\Desktop\studia\BitMatrix\BitMatrix\BitMatrixLib\obj\Debug\net8.0\ref\BitMatrixLib.dll
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.deps.json
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.dll
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.pdb
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.AssemblyInfoInputs.cache
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.AssemblyInfo.cs
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.csproj.CoreCompileInputs.cache
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.sourcelink.json
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.dll
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\refint\BitMatrixLib.dll
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.pdb
+D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\ref\BitMatrixLib.dll
