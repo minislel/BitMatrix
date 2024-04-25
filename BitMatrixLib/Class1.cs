@@ -2,7 +2,7 @@
 using System.Text;
 
 // prostokątna macierz bitów o wymiarach m x n
-public partial class BitMatrix
+public partial class BitMatrix : IEnumerable<BitMatrix>
 {
     private BitArray data;
     public int NumberOfRows { get; }
@@ -29,18 +29,18 @@ public partial class BitMatrix
 
         else
         {
-            int z = 0;
             data = new BitArray(numberOfRows * numberOfColumns, false);
             for (int i = 0; i < numberOfRows; i++)
             {
-
                 for (int j = 0; j < numberOfColumns; j++)
                 {
-                    if (j < numberOfColumns)
+                    try
                     {
-
-                        data[i + j] = BitToBool(bits[z]);
-                        z++;
+                        data[i * numberOfColumns + j] = BitToBool(bits[i * numberOfColumns + j]);
+                    }
+                    catch 
+                    {
+                        
                     }
                 }
 
@@ -63,7 +63,7 @@ public partial class BitMatrix
             {
                 if (j < NumberOfColumns)
                 {
-                    sbrow.Append(BoolToBit(data[j + i]));
+                    sbrow.Append(BoolToBit(data[i * NumberOfColumns + j]));
                 }
             }
             sb.Append(sbrow);
@@ -71,5 +71,15 @@ public partial class BitMatrix
             sbrow.Clear();
         }
         return sb.ToString();
+    }
+
+    public IEnumerator<BitMatrix> GetEnumerator()
+    {
+        throw new NotImplementedException();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        throw new NotImplementedException();
     }
 }
