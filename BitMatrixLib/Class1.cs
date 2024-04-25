@@ -2,7 +2,7 @@
 using System.Text;
 
 // prostokątna macierz bitów o wymiarach m x n
-public partial class BitMatrix : IEnumerable<BitMatrix>
+public partial class BitMatrix : IEnumerable<BitMatrix>, IEquatable<BitMatrix>
 {
     private BitArray data;
     public int NumberOfRows { get; }
@@ -41,7 +41,7 @@ public partial class BitMatrix : IEnumerable<BitMatrix>
                     catch 
                     {
                         
-                    }
+                    } 
                 }
 
             }
@@ -50,6 +50,50 @@ public partial class BitMatrix : IEnumerable<BitMatrix>
         NumberOfColumns = numberOfColumns;
     }
 
+    public BitMatrix(int[,] bits)
+    {
+        if (bits == null)
+        {
+            throw new NullReferenceException("bits cannot be null");
+        }
+        if (bits.Length == 0)
+        {
+            throw new ArgumentOutOfRangeException("no bits provided");
+
+        }
+        NumberOfColumns = bits.GetLength(1);
+        NumberOfRows = bits.GetLength(0);
+        data = new BitArray(NumberOfColumns * NumberOfRows);
+        for (int i = 0; i < NumberOfRows; i++)
+        {
+            for (int j = 0; j < NumberOfColumns; j++)
+            {
+                data[i * NumberOfColumns + j] = BitToBool(bits[i, j]);
+            }
+        }
+    }
+    public BitMatrix(bool[,] bits)
+    {
+        if (bits == null)
+        {
+            throw new NullReferenceException("bits cannot be null");
+        }
+        if (bits.Length == 0)
+        {
+            throw new ArgumentOutOfRangeException("no bits provided");
+
+        }
+        NumberOfColumns = bits.GetLength(1);
+        NumberOfRows = bits.GetLength(0);
+        data = new BitArray(NumberOfColumns * NumberOfRows);
+        for (int i = 0; i < NumberOfRows; i++)
+        {
+            for (int j = 0; j < NumberOfColumns; j++)
+            {
+                data[i * NumberOfColumns + j] = bits[i, j];
+            }
+        }
+    }
     public static int BoolToBit(bool boolValue) => boolValue ? 1 : 0;
     public static bool BitToBool(int bit) => bit != 0;
 
@@ -82,4 +126,23 @@ public partial class BitMatrix : IEnumerable<BitMatrix>
     {
         throw new NotImplementedException();
     }
+
+    public bool Equals(BitMatrix? other)
+    {
+        if (other == null)
+            return false;
+        return (this.data == other.data && this.NumberOfColumns == other.NumberOfColumns && this.NumberOfRows == other.NumberOfRows);
+    }
+    public override bool Equals(object? obj)
+    {
+        if (obj is BitMatrix other)
+        {
+            if (other == null)
+                return false;
+            return (this.data == other.data && this.NumberOfColumns == other.NumberOfColumns && this.NumberOfRows == other.NumberOfRows);
+        }
+        else return false;
+    }
+
+
 }
