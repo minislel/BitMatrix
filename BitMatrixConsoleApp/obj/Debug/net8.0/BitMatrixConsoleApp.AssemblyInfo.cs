@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BitMatrixConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45643b981460bbbcdf2ead34f855d121f98429d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af7d433e2a8ede6f9f4678424796fd31fe095e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BitMatrixConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BitMatrixConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

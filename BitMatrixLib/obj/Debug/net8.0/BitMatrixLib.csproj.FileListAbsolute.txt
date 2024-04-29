@@ -22,3 +22,15 @@ D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMat
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\refint\BitMatrixLib.dll
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.pdb
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixLib\obj\Debug\net8.0\ref\BitMatrixLib.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.deps.json
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\bin\Debug\net8.0\BitMatrixLib.pdb
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.AssemblyInfoInputs.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.AssemblyInfo.cs
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.csproj.CoreCompileInputs.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.sourcelink.json
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\refint\BitMatrixLib.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\BitMatrixLib.pdb
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixLib\obj\Debug\net8.0\ref\BitMatrixLib.dll

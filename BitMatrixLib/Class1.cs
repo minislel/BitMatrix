@@ -2,13 +2,30 @@
 using System.Text;
 
 // prostokątna macierz bitów o wymiarach m x n
-public partial class BitMatrix : IEnumerable<BitMatrix>, IEquatable<BitMatrix>
+public partial class BitMatrix : IEnumerable<int[]>, IEquatable<BitMatrix>
 {
     private BitArray data;
     public int NumberOfRows { get; }
     public int NumberOfColumns { get; }
     public bool IsReadOnly => false;
+    public int this[int i, int j]
+    {
+        get { 
+            if (i>NumberOfColumns || j > NumberOfRows)
+            {
+                throw new IndexOutOfRangeException("index is out of range");
+            }
+            return BoolToBit(data[i * NumberOfColumns + j]); 
+        }
+        set {
+            if (i > NumberOfColumns || j > NumberOfRows)
+            {
+                throw new IndexOutOfRangeException("index is out of range");
+            }
+            data[i * NumberOfColumns + j] = BitToBool(value); 
+        }
 
+    }
     // tworzy prostokątną macierz bitową wypełnioną `defaultValue`
     public BitMatrix(int numberOfRows, int numberOfColumns, int defaultValue = 0)
     {
@@ -43,7 +60,6 @@ public partial class BitMatrix : IEnumerable<BitMatrix>, IEquatable<BitMatrix>
                         
                     } 
                 }
-
             }
         }
         NumberOfRows = numberOfRows;
@@ -117,32 +133,83 @@ public partial class BitMatrix : IEnumerable<BitMatrix>, IEquatable<BitMatrix>
         return sb.ToString();
     }
 
-    public IEnumerator<BitMatrix> GetEnumerator()
+
+    public static bool operator ==(BitMatrix A, BitMatrix B)
     {
-        throw new NotImplementedException();
+
+        if (ReferenceEquals(A, B))
+        {
+            return true;
+        }
+        if (ReferenceEquals(A, null) || ReferenceEquals(B, null))
+        {
+            return false;
+        }
+
+        return A.Equals(B);
+    }
+
+    public static bool operator !=(BitMatrix A, BitMatrix B) => !(A == B);
+    public bool Equals(BitMatrix other)
+    {
+
+        if (ReferenceEquals(other, this))
+        {
+            return true;
+        }
+        if (ReferenceEquals(other, null) || ReferenceEquals(this, null))
+        {
+            return false;
+        }
+
+
+
+        if (this.NumberOfColumns == other.NumberOfColumns && this.NumberOfRows == other.NumberOfRows && this.data.Length == other.data.Length)
+        {
+            for (int i = 0; i < data.Length; i++)
+            {
+                if (this.data[i] != other.data[i])
+                { return false; }
+            }
+            return true;
+        }
+        return false;
+    }
+    public override bool Equals(object obj)
+    {
+
+        if (!ReferenceEquals(obj, null) && (obj.GetType() == this.GetType()))
+        {
+            return Equals(obj);
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(data, NumberOfColumns, NumberOfRows);
+    }
+
+    public IEnumerator<int[]> GetEnumerator()
+    {
+        for (int i = 0; i < NumberOfRows; i++)
+        {
+            int[] row = new int[NumberOfColumns];
+            for (int j = 0; j < NumberOfColumns; j++)
+            {
+                row[j] = this[i, j];
+            }
+            yield return row;
+        }
     }
 
     IEnumerator IEnumerable.GetEnumerator()
     {
-        throw new NotImplementedException();
+        return GetEnumerator();
     }
-
-    public bool Equals(BitMatrix? other)
-    {
-        if (other == null)
-            return false;
-        return (this.data == other.data && this.NumberOfColumns == other.NumberOfColumns && this.NumberOfRows == other.NumberOfRows);
-    }
-    public override bool Equals(object? obj)
-    {
-        if (obj is BitMatrix other)
-        {
-            if (other == null)
-                return false;
-            return (this.data == other.data && this.NumberOfColumns == other.NumberOfColumns && this.NumberOfRows == other.NumberOfRows);
-        }
-        else return false;
-    }
-
-
 }

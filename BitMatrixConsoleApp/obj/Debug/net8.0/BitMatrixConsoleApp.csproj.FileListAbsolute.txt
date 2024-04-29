@@ -36,3 +36,22 @@ D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.pdb
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.genruntimeconfig.cache
 D:\Users\marcin.swiderski\Desktop\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\ref\BitMatrixConsoleApp.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixConsoleApp.exe
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixConsoleApp.deps.json
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixConsoleApp.runtimeconfig.json
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixConsoleApp.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixConsoleApp.pdb
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixLib.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\bin\Debug\net8.0\BitMatrixLib.pdb
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.csproj.AssemblyReference.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.AssemblyInfoInputs.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.AssemblyInfo.cs
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.sourcelink.json
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatri.9B4C58E1.Up2Date
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\refint\BitMatrixConsoleApp.dll
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.pdb
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\BitMatrixConsoleApp.genruntimeconfig.cache
+C:\Users\marci\Desktop\projekty studia\BitMatrix\BitMatrixConsoleApp\obj\Debug\net8.0\ref\BitMatrixConsoleApp.dll
