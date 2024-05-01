@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitMatrixLib", "BitMatrixLib\BitMatrixLib.csproj", "{12B02399-6098-452C-BE74-EA0BDBCA7780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitMatrixConsoleApp", "BitMatrixConsoleApp\BitMatrixConsoleApp.csproj", "{32D5A2C2-E8D0-4627-B546-B7C34527BDD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BitMatrixConsoleApp", "BitMatrixConsoleApp\BitMatrixConsoleApp.csproj", "{32D5A2C2-E8D0-4627-B546-B7C34527BDD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
